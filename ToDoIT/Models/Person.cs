@@ -10,6 +10,7 @@ namespace ToDoIT.Models
         private string firstName;
         private string lastName;
 
+        public Person() { }
         public Person(int id, string firstName, string lastName)
         {
             if ((!String.IsNullOrWhiteSpace(firstName)) && (!String.IsNullOrWhiteSpace(lastName)) || !(id < 0))
